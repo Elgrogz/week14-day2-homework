@@ -1,6 +1,6 @@
 var React = require('react');
 
-// var Song = require('../components/Song.jsx');
+var Song = require('../components/Song.jsx');
 
 var SongList = React.createClass({
   getInitialState: function() {
@@ -23,7 +23,8 @@ var SongList = React.createClass({
   render: function() {
     return (
         <div className="song-list">
-
+        <h1>iTunes Current Top 20</h1>
+        <Song songs={this.state.songs} />
         </div>
       )
   }
